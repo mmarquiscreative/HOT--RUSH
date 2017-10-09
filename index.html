@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HOT / RUSH</title>
+  <link rel="stylesheet" href="main.css">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style style="text/css">
+.scroll-right {
+ overflow: hidden;
+ position: relative;
+    
+}
+.scroll-right p {
+ position: relative;
+ width: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 15s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 4s linear infinite;
+}
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-right {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+    
+
+    
+</style>
+</head>
+<body>
+<div id="titleLogo">
+
+</div>
+<div id="alertDiv"></div>
+<div id="gameArea">
+     <!-- <div class="scroll-right flashing" id=""> 
+      <p colspan="3"><strong><em>HOT / RUSH / HOT / RUSH / HOT / RUSH / HOT / RUSH</em></strong></p>
+       
+  </div>
+  -->
+  <table id="queueBox">
+  <tr>
+      <th>Project</th>
+      <th>Task Name</th>
+    <th>Due</th>
+  </tr>
+   <tr class="jobRow">
+       <td>17014_COL_BC_Hutto</td>
+       <td>Design First Draft</td>
+       <td>Due</td>
+   </tr>
+   <tr class="jobRow">
+       <td>17014_COL_BC_Hutto</td>
+       <td>Design First Draft</td>
+       <td>Due</td>
+   </tr>
+   <tr class="jobRow jobCompleteSlow">
+       <td>17014_COL_BC_Hutto</td>
+       <td>Design First Draft</td>
+       <td>Due</td>
+   </tr>
+    </table>
+</div>
+<div id="GUI">
+    <div id="pauseButton">
+        <h4>Pause</h4>
+    </div>
+    <div id="scoreBox">
+        <h3>SCORE</h3>
+        <h1 id="score">0</h1>
+    </div>
+    <div id="restartButton">
+        <h4>Restart</h4>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
